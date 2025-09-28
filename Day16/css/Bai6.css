@@ -1,0 +1,18 @@
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+td {
+  width: 60px;
+  height: 60px;
+  border: 2px solid black;
+}
+
+.even-square {
+  background-color: black;
+}
+
+.odd-square {
+  background-color: white;
+}
