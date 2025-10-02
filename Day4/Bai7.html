@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>07 Form Sign-up</title>
+  </head>
+
+  <style>
+    table,
+    tr,
+    th,
+    td {
+      border: solid;
+    }
+  </style>
+
+  <body>
+    <main>
+      <form action="/sign_up" method="post">
+        <table>
+          <tr>
+            <th colspan="2">Dang ky</th>
+          </tr>
+          <tr>
+            <td><label for="lb_fullname">Full name</label></td>
+            <td>
+              <input type="text" id="lb_fullname" placeholder="Nhap fullname" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="lb_username">Username</label></td>
+            <td>
+              <input
+                type="text"
+                name="username"
+                id="lb_username"
+                placeholder="Nhap ten"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="lb_password">Password</label></td>
+            <td>
+              <input
+                type="password"
+                name="password"
+                id="lb_password"
+                placeholder="Nhap mat khau"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="lb_confirm_password"></label>Nhap lai <br />Password
+            </td>
+            <td>
+              <input
+                type="password"
+                name="confirm_password"
+                id="lb_confirm_password"
+                placeholder="Nhap lai mat khau"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Gioi tinh</label></td>
+            <td>
+              <label for=""
+                ><input type="radio" name="gender" value="male" />Nam</label
+              >
+              <label for=""
+                ><input type="radio" name="gender" value="female" />Nu</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td><label for="lb_birthday">Ngay sinh</label></td>
+            <td>
+              <select name="day" id="">
+                <option value="1">ngay 1</option>
+                <option value="2">ngay 2</option>
+                <option value="3">ngay 3</option>
+                <option value="4">ngay 4</option>
+                <option value="5">ngay 5</option>
+                <option value="6">ngay 6</option>
+                <option value="7">ngay 7</option>
+              </select>
+              <select name="month" id="">
+                <option value="1">thang 1</option>
+                <option value="2">thang 2</option>
+                <option value="3">thang 3</option>
+                <option value="4">thang 4</option>
+                <option value="5">thang 5</option>
+              </select>
+              <select name="year" id="">
+                <option value="2015">nam 2025</option>
+                <option value="2016">nam 2023</option>
+                <option value="2017">nam 2026</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="lb_address">Dia chi</label></td>
+            <td>
+              <textarea
+                name="address"
+                id="lb_address"
+                cols="20"
+                rows="3"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="lb_avt">Avatar</label></td>
+            <td><input type="file" name="" id="lb_avt" /></td>
+          </tr>
+          <tr>
+            <td>So thich</td>
+            <td>
+              <label
+                ><input type="checkbox" name="hobby" value="xem_phim" /> Xem
+                Phim</label
+              >
+              <label
+                ><input type="checkbox" name="hobby" value="the_thao" /> Thể
+                Thao</label
+              >
+              <label
+                ><input type="checkbox" name="hobby" value="web" /> Web</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align: center">
+              <button type="reset">Reset</button>
+              <button type="submit">OK</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </main>
+  </body>
+</html>

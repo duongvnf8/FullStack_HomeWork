@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form đặt hàng sản phẩm</title>
+  </head>
+  <body>
+    <header><h1>Form đặt hàng sản phẩm</h1></header>
+    <main>
+      <form action="" method="post">
+        <fieldset>
+          <legend>Thông tin đơn hàng</legend>
+          <div>
+            <label for="product"></label>Tên sản phẩm
+            <select name="smartphone" id="product">
+              <option value="0">iPhone 13</option>
+              <option value="1">iPhone 14</option>
+              <option value="2">iPhone 15</option>
+              <option value="3">iPhone 16</option>
+            </select>
+          </div>
+          <div>
+            <label for="quantity"></label>Số lượng
+            <input type="number" name="quantity" id="quantity" />
+          </div>
+          <div>
+            <label for="file">Upload ảnh thanh toán</label
+            ><input type="file" name="file" id="file" />
+          </div>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>

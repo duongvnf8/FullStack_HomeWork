@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form khảo sát ý kiến</title>
+  </head>
+  <body>
+    <header><h1>Form khảo sát ý kiến</h1></header>
+    <main>
+      <form action="" method="post">
+        <div>
+          <label for="lbl-fullname">Họ tên:</label>
+          <input type="text" name="fullname" id="lbl-fullname" />
+        </div>
+        <div>
+          <label for="satisfaction">Mức độ hài lòng</label>
+          <input type="range" id="satisfaction" name="satisfaction" />
+        </div>
+        <div>
+          <label for="time">Thời gian liên hệ</label>
+          <input type="time" name="time" id="time" />
+        </div>
+        <div>
+          <label>Kênh thông tin</label>
+          <label
+            ><input
+              type="checkbox"
+              name="social_network"
+              id="facebook"
+            />Facebook</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="social_network"
+              id="youtube"
+            />Youtube</label
+          >
+
+          <label
+            ><input
+              type="checkbox"
+              name="social_network"
+              id="website"
+            />Website</label
+          >
+        </div>
+        <label for="other_comments">Góp ý khác:</label>
+        <div>
+          <textarea name="other_comments" id="other_comments"></textarea>
+        </div>
+        <div><button type="submit">Gửi</button></div>
+      </form>
+    </main>
+  </body>
+</html>

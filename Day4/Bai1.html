@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form đăng ký tài khoản</title>
+  </head>
+  <body>
+    <header><h1>Form đăng ký tài khoản</h1></header>
+    <main>
+      <form action="" method="post">
+        <div>
+          <label for="lbl-fullname">Họ và tên:</label>
+          <input type="text" name="fullname" id="lbl-fullname" />
+        </div>
+
+        <div>
+          <label for="lbl-email">Email:</label>
+          <input type="email" name="email" id="lbl-email" />
+        </div>
+
+        <div>
+          <label for="lbl-password">Mật khẩu:</label>
+          <input type="password" name="password" id="lbl-password" />
+        </div>
+        <div>
+          <label for="lbl-birthday">Ngày sinh:</label>
+          <input type="date" name="birthday" id="lbl-birthday" />
+        </div>
+
+        <div>
+          <label>Giới tính</label>
+          <label> <input type="radio" name="gender" value="male" />Nam </label>
+          <label> <input type="radio" name="gender" value="female" />Nữ </label>
+          <label>
+            <input type="radio" name="gender" value="unknown" />Khác
+          </label>
+        </div>
+        <div>
+          <label>Sở thích</label>
+          <label>
+            <input type="checkbox" name="interest" value="book" />Đọc sách
+          </label>
+          <label>
+            <input type="checkbox" name="interest" value="travel" />Du lịch
+          </label>
+          <label>
+            <input type="checkbox" name="interest" value="sport" />Thể thao
+          </label>
+        </div>
+        <label for="txt-messages">Mô tả bản thân:</label>
+        <div>
+          <textarea name="messages" id="txt-messages"></textarea>
+        </div>
+        <button type="submit">Đăng ký</button>
+        <button type="reset">Xóa</button>
+      </form>
+    </main>
+  </body>
+</html>

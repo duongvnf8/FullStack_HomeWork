@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fdf6ec;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #8b4513;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  width: 250px;
+  margin: auto;
+}
+
+li {
+  padding: 8px 0;
+  border-bottom: 1px solid #ccc;
+  font-size: 18px;
+}
+
+li::before {
+  content: "☕";
+  color: #8b4513;
+}
+
+li span {
+  font-weight: bold;
+  float: right;
+  color: #8b4513;
+}
+
+li:hover {
+  background: #ffe9d6;
+}

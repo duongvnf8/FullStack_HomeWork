@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service Login</title>
+  </head>
+  <body>
+    <header>
+      <caption>
+        Novell Services Login
+      </caption>
+    </header>
+    <main>
+      <form action="" method="post">
+        <table>
+          <tr>
+            <td><label for="lbl-username">Username:</label></td>
+            <th><input type="text" name="username" id="lbl-username" /></th>
+          </tr>
+          <tr>
+            <td><label for="lbl-password">Password:</label></td>
+            <th><input type="password" name="password" id="lbl-password" /></th>
+          </tr>
+          <tr>
+            <td>
+              <label for="lbl-city">City of <br />Employment:</label>
+            </td>
+            <th><input type="text" name="city" id="lbl-city" /></th>
+          </tr>
+          <tr>
+            <td><label for="lbl-server">Web server:</label></td>
+            <td>
+              <select name="server" id="lbl-server">
+                <option value="choose">--Choose a server--</option>
+                <option value="apache">Apache</option>
+                <option value="microsoft">Microsoft</option>
+                <option value="google">Google</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label
+                >Please specify <br />
+                your role</label
+              >
+            </td>
+            <td>
+              <div>
+                <label
+                  ><input type="radio" name="right" id="admin" />Admin</label
+                ><br />
+                <label
+                  ><input
+                    type="radio"
+                    name="right"
+                    id="engineer"
+                  />Engineer</label
+                ><br />
+                <label
+                  ><input
+                    type="radio"
+                    name="right"
+                    id="manager"
+                  />Manager</label
+                ><br />
+                <label
+                  ><input type="radio" name="right" id="guest" />Guest</label
+                >
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Single Sign-on <br />to the following:</label>
+            </td>
+            <td>
+              <div>
+                <label
+                  ><input type="checkbox" name="follow" id="mail" />Mail</label
+                ><br />
+                <label
+                  ><input
+                    type="checkbox"
+                    name="follow"
+                    id="payroll"
+                  />Payroll</label
+                ><br /><label
+                  ><input
+                    type="checkbox"
+                    name="follow"
+                    id="self-servise"
+                  />Self-servise</label
+                ><br />
+              </div>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </main>
+    <footer>
+      <div>
+        <button type="submit">Login</button> <button type="reset">Reset</button>
+      </div>
+    </footer>
+  </body>
+</html>

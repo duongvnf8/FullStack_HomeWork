@@ -1,0 +1,27 @@
+body {
+    font-family: Georgia, serif;
+    padding: 20px;
+    background: #fafafa;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #c0392b;
+}
+
+p {
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+
+p:first-child {
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+p::first-letter {
+    font-size: 200%;
+    font-weight: bold;
+    color: #c0392b;
+}

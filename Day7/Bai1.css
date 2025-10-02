@@ -1,0 +1,36 @@
+body {
+    background-color: #2e3e4d;
+}
+
+.navbar {
+    background-color: #315b6e;
+    margin: 20px auto;
+    padding: 0;
+    width: 80%;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: left;
+}
+
+.menu-item {
+    margin: 0;
+    padding: 0;
+}
+
+.menu-link {
+    display: block;
+    padding: 12px 22px;
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 1;
+
+}
+
+.menu-link:hover {
+    color: orangered;
+}

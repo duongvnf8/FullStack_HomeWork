@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form liên hệ nhiều nước</title>
+  </head>
+  <body>
+    <header><h1>Form liên hệ nhiều bước</h1></header>
+    <main>
+      <form action="" method="post">
+        <fieldset>
+          <legend>Thông tin cá nhân</legend>
+          <div>
+            <label for="lbl-fullname">Họ tên:</label>
+            <input type="text" name="fullname" id="lbl-fullname" />
+          </div>
+          <div>
+            <label for="lbl-email">Email:</label>
+            <input type="text" name="email" id="lbl-email" />
+          </div>
+
+          <div>
+            <label for="number"></label>Số điện thoại
+            <input type="number" name="sdt" id="number" />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Thông tin yêu cầu</legend>
+          <div>
+            <label for="request">Loại yêu cầu:</label>
+            <select name="request" id="request">
+              <option value="0">Hỗ trợ kỹ thuật</option>
+            </select>
+          </div>
+          <label for="txt-messages">Mô tả</label>
+
+          <div>
+            <textarea name="messages" id="txt-messages"></textarea>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Thông tin bổ sung</legend>
+          <div>
+            <label
+              ><input
+                type="checkbox"
+                name="nhan-email"
+                value="nhan-email"
+              />Nhận email khuyễn mãi</label
+            >
+          </div>
+          <div>
+            <label>Cách liên hệ</label>
+            <label
+              ><input type="radio" name="contact" value="contact" />Email</label
+            >
+            <label
+              ><input type="radio" name="contact" value="call" />Điện
+              thoại</label
+            >
+          </div>
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <div><button type="submit">Gửi thông tin</button></div>
+    </footer>
+  </body>
+</html>
