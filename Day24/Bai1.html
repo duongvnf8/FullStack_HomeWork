@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todos App</title>
+    <link rel="icon" href="TodosApp.webp" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body
+    class="flex justify-center items-center bg-[#8758ff] text-white font-[Poppins, sans-serif]"
+  >
+    <div class="bg-[#1A1A40] w-[442px] m-20 rounded-sm p-8">
+      <h1 class="text-[28px] font-semibold text-center mb-8">
+        Get Things Done !
+      </h1>
+
+      <form
+        id="todo-form"
+        class="w-full flex items-center justify-center mb-8 text-sm"
+      >
+        <input
+          id="task-input"
+          class="outline-none border border-[#8758ff] py-2 px-4 w-[300px] bg-transparent placeholder:text-gray-500"
+          type="text"
+          placeholder="What is the task today?"
+        />
+        <button
+          class="bg-[#8758ff] cursor-pointer border-none p-[0.55rem]"
+          type="submit"
+        >
+          Add Task
+        </button>
+      </form>
+
+      <ul id="task-list" class="flex flex-col gap-4"></ul>
+    </div>
+
+    <script src="js/Bai1.js"></script>
+  </body>
+</html>
