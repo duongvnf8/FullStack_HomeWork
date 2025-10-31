@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .up {
+        color: green;
+      }
+      .down {
+        color: red;
+      }
+      .up,
+      .down {
+        font-size: 0.8rem;
+        cursor: pointer;
+      }
+      .selected {
+        border: 1px dashed green;
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border: 1px solid red;
+      }
+      ul li {
+        margin: 10px 0;
+        padding: 5px 10px;
+      }
+      #menu {
+        width: 100px;
+        position: absolute;
+        background: #ddd;
+        display: none;
+        padding: 5px;
+      }
+      #menu div:hover {
+        cursor: pointer;
+        color: red;
+      }
+      #overlay {
+        visibility: hidden;
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+      }
+      .rename-box {
+        padding: 10px;
+        background: #cdcdcd;
+        margin: 50px auto;
+        display: flex;
+        gap: 10px;
+        width: 220px;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <ul>
+      <li>Item 1 <span class="up">Up</span> <span class="down">Down</span></li>
+      <li>Item 2 <span class="up">Up</span> <span class="down">Down</span></li>
+      <li>Item 3 <span class="up">Up</span> <span class="down">Down</span></li>
+      <li>Item 4 <span class="up">Up</span> <span class="down">Down</span></li>
+      <li>Item 5 <span class="up">Up</span> <span class="down">Down</span></li>
+    </ul>
+    <div id="menu">
+      <div id="rename">Đổi tên</div>
+      <div id="delete">Xóa</div>
+    </div>
+
+    <div id="overlay">
+      <div class="rename-box">
+        <input type="text" id="nameInput" />
+        <button id="saveRename">Lưu</button>
+      </div>
+    </div>
+    <script src="./js/Bai1.js"></script>
+  </body>
+</html>
+
