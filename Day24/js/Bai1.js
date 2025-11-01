@@ -29,8 +29,7 @@ function addTask(text) {
     "bg-[#8758ff]",
     "py-[12px]",
     "px-[16px]",
-    "rounded-md",
-    "mb-3"
+    "rounded-md"
   );
 
   const span = document.createElement("span");
