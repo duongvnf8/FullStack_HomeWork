@@ -45,13 +45,11 @@ function addTask(text) {
   const deleteBtn = document.createElement("button");
   deleteBtn.innerHTML = `<i class="fa-solid fa-trash cursor-pointer"></i>`;
 
-  // ===== XÓA TASK =====
   deleteBtn.addEventListener("click", () => {
     li.remove();
     saveTasks();
   });
 
-  // ===== SỬA TASK =====
   editBtn.addEventListener("click", () => {
     const editForm = document.createElement("form");
     editForm.classList.add(
